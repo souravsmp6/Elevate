@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>REGISTRATION FORM</h1>
+    </header>
+    <main>
+      <form action="submit" method="POST">
+        <label for="name">Full Name: </label>
+        <input type="text" id="name" name="name" required />
+        <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br /><br />
+
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          maxlength="20"
+          required
+        /><br /><br />
+
+        <label for="phone">Enter Phone Number:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{10}"
+          title="Enter exactly 10 digits"
+          maxlength="10"
+          required
+        />
+        <br /><br />
+
+        <label for="personal_website">Enter your personal website</label>
+        <input
+          type="url"
+          id="personal_website"
+          name="personal_website"
+          placeholder="http://personal website address"
+        />
+        <br /><br />
+
+        <label for="range">Experience(0-100)</label>
+        <input
+          type="range"
+          name="experience"
+          id="experience"
+          min="0"
+          max="100"
+          required
+        />
+        <br /><br />
+
+        <label for="countries">Choose a country:</label>
+        <select id="countries" name="countries">
+          <option value="default" disabled selected>Select your country</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+        <br /><br />
+
+        <p>Select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label><br />
+
+        <input type="radio" id="other" name="gender" value="other" required />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <label for="terms">I agree to the terms and conditions</label>
+        <input type="checkbox" id="terms" name="terms" required />
+        <br /><br />
+
+        <label for="comments">Enter your suggestions</label>
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Enter your comments..."
+        ></textarea>
+        <br /><br />
+
+        <label for="file">Upload your resume</label>
+        <input type="file" name="file" id="file" />
+        <br /><br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+      </form>
+    </main>
+  </body>
+</html>
