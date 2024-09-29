@@ -1,0 +1,70 @@
+
+    #nav ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0;
+        margin: 0;
+        display: flex; /* Use Flexbox for row alignment */
+        justify-content: space-around; /* Distribute space evenly (optional) */
+    }
+
+    #nav li {
+        display: inline-block; /* Inline the list items */
+        margin: 0 10px; /* Add some space between them (optional) */
+    }
+
+    #nav a {
+        text-decoration: none; /* Remove underline */
+        color: black; /* Set text color */
+    }
+    #Specification-table, #Specification-table th, #Specification-table td {
+        border: 1px solid black;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+      }
+    
+      #gallery figure {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    
+      #gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    
+      #gallery figcaption {
+        margin-top: 8px;
+        font-size: 0.9em;
+        color: #555;
+      }
+      #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+      }
+    
+      #gallery figure {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    
+      #gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    
+      #gallery figcaption {
+        margin-top: 8px;
+        font-size: 0.9em;
+        color: #555;
+      }
+    
